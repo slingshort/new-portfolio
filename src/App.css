@@ -3,11 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --primary: #ddc7d4;
-  --secondary: #c595cf;
-  --tertiary: #5f4ea6;
-  --light: #e6e1e1;
-  --dark: #272f32;
+  --brightpurple: #e879f9;
+  --brightpink: #f472b6;
+  --light: #ffffff;
+  --dark: #111222;
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
 }
@@ -22,8 +21,9 @@ body {
   font-weight: 300;
   line-height: 1.5;
   font-size: 24px;
-  color: var(--dark);
-  background-color: var(--light);
+  font-weight: bold;
+  /* color: var(--light); */
+  background-color: var(--dark);
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,10 +31,13 @@ body {
 
 header {
   padding: 1rem;
-  background-color: var(--dark);
   color: white;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top:0;
+  width: 100%;
+  background-color: var(--dark);
 }
 
 footer {
@@ -49,29 +52,35 @@ footer {
 p {
   font-size: 20px;
   padding: 1rem;
+  font-weight: 300;
 }
 
 a {
   /* color:var(--tertiary); */
   text-decoration: none;
+  font-weight: 300;
+}
+
+a:hover {
+  transition: .3s;
 }
 
 button {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: 0;
+  padding: 0.25rem .5rem;
+  border-radius: .25rem;
+  border:2px solid var(--brightpurple);
   cursor: pointer;
   margin: 0 4px;
-  background-color: var(--tertiary);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.272);
+  color: var(--brightpurple);
   transition:.3s;
 }
 
 button:hover {
-  background-color:rgba(0, 0, 0, 0.65) ;
-  color:white;
+  background-color:var(--brightpurple) ;
+  color:var(--dark);
 }
 
 .container {
@@ -157,6 +166,13 @@ button:hover {
   padding-bottom: var(--spacing-two);
 }
 
+.p-center {
+  padding-top: 25%;
+  padding-bottom: 25%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .form {
   padding: 2rem;
   margin:1rem;
@@ -167,47 +183,14 @@ button:hover {
   color: white;
 }
 
-.card {
-  padding: 2rem;
-  margin:1rem;
-  border-radius: 10%;
-  width: 270px;
-  height: 300px;
-  background-color: var(--secondary);
-  color: black
-}
-
-.card-button {
-  font-size: 1.2rem;
-  font-weight: 100;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: 0;
-  cursor: pointer;
-  margin: 0 4px;
-  background-color:#ffffffc5;
-  color:var(--tertiary);
-  transition:.3s;
-}
-
-.card-button:hover {
-  background-color: var(--dark);
-  color:white;
-}
-
-.homepage-info {
-  padding: 2rem;
-  margin-top: 5%;
-}
-
 .icons {
-  color: var(--secondary);
-  font-size: 2rem;
-  padding: .5rem;
+  color: var(--brightpurple);
+  font-size: 2.5rem;
+  padding: .75rem;
 }
 
 .icons:hover {
-  color: var(--tertiary);
+  color: var(--light);
   transform: scale(1.2);
   transition: .25s;
 }
@@ -221,8 +204,10 @@ button:hover {
   
 }
 
-.footer {
-  position: fixed;
-  bottom: 0;
+.inline-link {
+  color:var(--brightpurple);
 }
 
+.inline-link:hover {
+  color:var(--brightpink);
+}
