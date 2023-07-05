@@ -1,28 +1,15 @@
+import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import projects from './components/ProjectList';
+import ProjectCard from './components/ProjectCard';
 import { motion } from "framer-motion";
 import profile from './assets/profile-picture.jpg';
-import { BiMailSend, BiLogIn } from "react-icons/bi";
-import { AiFillGithub } from "react-icons/ai";
+import { BiMailSend } from "react-icons/bi";
+
 
 
 function App() {
-
-  const portfolioComponents = projects.map((project) => (
-    <div className='projectCard' key={project.id}>
-      <h3 className='p-2'>{project.title}</h3>
-      <img
-        alt={project.title}
-        src={`./assets/${project.image}`}
-      />
-      <p className='text-sm'>{project.description}</p>
-      <div className="flex-row">
-        <a className='cardIcon' href={project.live}><BiLogIn /></a>
-        <a className='cardIcon' href={project.repo}><AiFillGithub /></a>
-      </div>
-    </div>
-  ))
 
   return (
     <div className='app'>
@@ -51,7 +38,9 @@ function App() {
         <div className='grid place-content-center p-center'>
           <h1 className='text-slate-50 text-8xl'>Projects.</h1>
           <p className='text-fuchsia-400 text-2xl'> Here are a few projects I've worked on: </p>
-          <div className="projectScroll">{portfolioComponents}</div>
+          <div className="projectScroll">
+            <ProjectCard projects={projects} />
+          </div>
         </div>
 
         <div id='contact' className='grid place-content-center p-center'>
