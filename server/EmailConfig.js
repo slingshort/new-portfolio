@@ -13,7 +13,7 @@ app.post('/api/send-email', async (req, res) => {
     service: 'Gmail',
     auth: {
       user: 'salina.myat@gmail.com',
-      pass: 'Look2CsM',
+      pass: 'hidden',
     },
   });
 
