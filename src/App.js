@@ -6,6 +6,7 @@ import ProjectCard from './components/ProjectCard';
 import { motion } from "framer-motion";
 import profile from './assets/profile-picture.jpg';
 import { BiMailSend } from "react-icons/bi";
+import EmailForm from './components/EmailForm';
  
 
 function App() {
@@ -44,8 +45,10 @@ function App() {
 
         <div id='contact' className='grid place-content-center p-center'>
           <h1 className='text-fuchsia-400 text-8xl'>Contact me.</h1>
-          {/* <p className='text-slate-50 text-xl'>Here's my email if you'd like to reach out! You can also find me on <a className='inline-link' href='https://www.linkedin.com/in/salina-m-a1655111b/'>Linkedin</a> if you prefer to conact me there.</p> */}
-          <form className='grid grid-cols-3'>
+          <p className='text-slate-50 text-xl px-4'>
+            My email is <a className='inline-link' href='mailto:salina.myat@gmail.com'>salina.myat@gmail.com</a> if you'd like to reach out! You can also find me on <a className='inline-link' href='https://www.linkedin.com/in/salina-m-a1655111b/'>Linkedin</a> if you prefer to conact me there.
+          </p>
+          {/* <form className='grid grid-cols-3'>
             <div className='col-span-1 bg-fuchsia-400 m-2 rounded text-black text-xl pt-4'>
               <p>Please feel free to send me an email via this form. </p>
               <p>Otherwise, you can reach out via <a className='inline-link2' href='https://www.linkedin.com/in/salina-m-a1655111b/'>Linkedin</a> if that's your preferred method of communication.</p>
@@ -65,8 +68,8 @@ function App() {
               </div>
               <button className='mailSend'><BiMailSend /></button>
             </div>
-          </form>
-          {/* <p className='text-fuchsia-400 text-xl px-2'><a className='inline-link' href='mailto:salina.myat@gmail.com'><span><BiMailSend /></span>salina.myat@gmail.com</a></p> */}
+          </form> */}
+          {/* <EmailForm /> */}
         </div>
 
       </motion.div>
