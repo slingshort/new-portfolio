@@ -6,8 +6,7 @@ import ProjectCard from './components/ProjectCard';
 import { motion } from "framer-motion";
 import profile from './assets/profile-picture.jpg';
 import { BiMailSend } from "react-icons/bi";
-
-
+ 
 
 function App() {
 

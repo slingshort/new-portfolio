@@ -2,7 +2,7 @@ const projects = [
     {
       id:"1",
       title: "Bootcamp Bar",
-    //   image: "/images/bootcamp-bar.png",
+      // image: "/images/bootcamp-bar.png",
       description: "Group MERN stack project which mocks a booking system for a bar. Able to store and update persistent data in back-end database",
       live: "https://bootcamp-bar.herokuapp.com/",
       repo: "https://github.com/slingshort/Bootcamp_bar_V2.0",
