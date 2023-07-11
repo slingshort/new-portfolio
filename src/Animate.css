@@ -1,10 +1,8 @@
-.animate {
+.animate-element {
   opacity: 0;
-  transform: translateX(-50px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.animate.visible {
+.animate-element.fade-in {
   opacity: 1;
-  transform: translateX(0);
+  transition: opacity 3s ease;
 }
