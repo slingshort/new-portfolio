@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/job_portfolio/static/css/main.3593e8aa.css",
+    "main.js": "/job_portfolio/static/js/main.81ee453b.js",
+    "static/js/787.8d4efb73.chunk.js": "/job_portfolio/static/js/787.8d4efb73.chunk.js",
+    "static/media/profile-picture.jpg": "/job_portfolio/static/media/profile-picture.7c0bc74696806a6923ee.jpg",
+    "static/media/Salina_resume.pdf": "/job_portfolio/static/media/Salina_resume.1a31dbfc1a6f45489fcc.pdf",
+    "index.html": "/job_portfolio/index.html",
+    "main.3593e8aa.css.map": "/job_portfolio/static/css/main.3593e8aa.css.map",
+    "main.81ee453b.js.map": "/job_portfolio/static/js/main.81ee453b.js.map",
+    "787.8d4efb73.chunk.js.map": "/job_portfolio/static/js/787.8d4efb73.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3593e8aa.css",
+    "static/js/main.81ee453b.js"
+  ]
+}
