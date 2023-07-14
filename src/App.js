@@ -2,11 +2,64 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import './Animate.css';
 import Header from './components/Header';
-import projects from './components/ProjectList';
 import ProjectCard from './components/ProjectCard';
 import profile from './assets/profile-picture.jpg';
+// import projects from './components/ProjectList';
+import imgBar from './assets/bootcamp-bar.jpg'
+import imgHoliday from './assets/holiday-discoverer.jpg';
+import imgWork from './assets/work-day-scheduler.png';
+import imgWeather from './assets/weather-dashboard.png';
+import imgLegacy from './assets/my-first-project.png';
+
+
+
 
 function App() {
+
+
+  const projects = [
+    {
+      id: "1",
+      title: "Bootcamp Bar",
+      image: imgBar,
+      description: "Group MERN stack project which mocks a booking system for a bar. Able to store and update persistent data in back-end database",
+      live: "https://bootcamp-bar.herokuapp.com/",
+      repo: "https://github.com/slingshort/Bootcamp_bar_V2.0",
+    },
+    {
+      id: "2",
+      title: "Holiday Discoverer",
+      image: imgHoliday,
+      description: "First group full-stack project using multiple open source APIs to discover holidays on a given calendar date",
+      live: "https://kangazero.github.io/holiday-calendar-discoverer/",
+      repo: "https://github.com/slingshort/holiday-calendar-discoverer",
+    },
+    {
+      id: "3",
+      title: "Work Day Scheduler",
+      image: imgWork,
+      description: "Work day scheduler using local storage to store persisting data",
+      live: "https://slingshort.github.io/js_workday_scheduler/",
+      repo: "https://github.com/slingshort/js_workday_scheduler",
+    },
+    {
+      id: "4",
+      title: "Weather Dasboard",
+      image: imgWeather,
+      description: "Weather Dashboard to search weather in cities using Google API",
+      live: "https://slingshort.github.io/weather-dash/",
+      repo: "https://github.com/slingshort/weather-dash",
+    },
+    {
+      id: "5",
+      title: "Legacy Portfolio",
+      image: imgLegacy,
+      description: "My very first project!",
+      live: "https://slingshort.github.io/Portfolio/",
+      repo: "https://github.com/slingshort/holiday-calendar-discoverer",
+    },
+
+  ]
 
   // animate scroll fade incomponent
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +81,7 @@ function App() {
         </div>
       </div>
 
-      <div  className={`animate-element ${isVisible ? 'fade-in' : ''}`}>
+      <div className={`animate-element ${isVisible ? 'fade-in' : ''}`}>
         <div className='flex flex-row p-8'>
           <div className='profile-pic'>
             <img className='rounded-full' src={profile} alt='profile-pic' />
