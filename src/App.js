@@ -89,7 +89,7 @@ function App() {
 
           <div className='place-content-center p-4'>
             <h1 className='text-fuchsia-400 text-6xl'>Hey, I'm Salina</h1>
-            <p className='text-slate-50 text-xl'> I've spent the past year developing my skills as a full-stack developer and am looking to transition into work as a front-end developer. Take a look at some of the projects I've worked on below!</p>
+            <p className='text-slate-50 text-xl'> I've spent the past year developing my skills as a full-stack developer and am looking to transition into a more technical role that allows me to use my web development skills. Take a look at some of the projects I've worked on below!</p>
             <p className='text-slate-50 text-xl'> Currently, I'm working as a professional musician. In case you're interested, you can take a look at some of the work I've been involved in with <a className='inline-link' href='https://www.taikoz.com/'>Taikoz</a> or <a className='inline-link' href='https://www.drummerqueens.com/'>Drummer Queens</a>.</p>
             <button className='justify-self-start px-8 my-1 text-xl'><a href='#contact'>Let's connect!</a></button>
           </div>
